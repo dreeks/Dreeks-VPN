@@ -9,7 +9,6 @@ ENV EASYRSA_PKI $OPENVPN/pki
 ENV EASYRSA_VARS_FILE $OPENVPN/vars
 ENV EASYRSA_CRL_DAYS 3650
 
-VOLUME ["/etc/openvpn"]
 EXPOSE 1194/udp
 
 ADD ./entrypoint.sh /entrypoint.sh
